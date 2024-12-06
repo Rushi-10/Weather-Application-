@@ -1,13 +1,221 @@
-body {
+:root{
+  --color-text-gray:#495057b3;
+}
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gray-text{
+  color: var(--color-text-gray);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background-color: rgb(206, 222, 252);
+  min-height: 100vh;
 }
+.navbar{
+  background-color: black;
+
+}
+.header{
+  color: white;
+}
+.current-city{
+  color: white;
+  margin-left: 20px;
+  margin-top: 9px;
+}
+.flex-horizontal{
+display: flex;
+align-items: center;
+}
+.flex-vertical{
+  display: flex;
+  flex-direction: column;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.space-btwn{
+  justify-content: space-between;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.header{
+  font-size:xx-large;
+  padding-inline: 5px;
+}
+.margin-auto{
+  margin: auto;
+}
+.mh1{
+  margin-inline: 1px;
+}
+.mh2{
+  margin-inline: 2px;
+}
+.mh3{
+  margin-inline: 3px;
+}
+.mh4{
+  margin-inline: 4px;
+}
+.mh5{
+  margin-inline: 5px;
+}
+.mh9{
+  margin-inline: 5px;
+}
+
+/* Styles for SearchBar */
+.inner-search{
+  height: 30px;
+    width: 100%;
+    
+    
+}
+.outer-search{
+  width:35vw;
+  
+  border-radius: 40px;
+    background-color:white;
+    margin-left: 40px;
+    margin-block: 10px;
+     
+}
+.city-search{
+  width: 60%;
+}
+
+.search-input{
+  border: none;
+  border-right: 1px solid rgb(84, 84, 84);
+ width: 100%;
+  
+}
+.search-input:focus {
+  outline: none; 
+  border: none;  
+}
+.favorite-city-outer{
+  width: 40%;
+}
+.favorite-city-inner{
+justify-content: space-between;
+}
+
+.favorite-city-dropdown{
+  width: 100%;
+  margin-top: 1rem;
+  background-color: white;
+ border-radius: 10px;
+ visibility: hidden;
+}
+.favorite-city-dropdown-item{
+  font-size: medium;
+  font-weight: 500;
+  padding: 2px 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+}
+.favorite-city-dropdown-item p{
+  width: 80%;
+}
+.favorite-city-dropdown-item p:hover{
+cursor: pointer;
+}
+.favorite-city-dropdown-item button:hover{
+cursor: pointer;
+}
+li{
+  list-style: none;
+}
+.city-search-dropdown{
+  width: 100%;
+  margin-top: 9rem;
+  background-color: white;
+ border-radius: 10px;
+ visibility: hidden;
+}
+.city-search-dropdown-item{
+  font-size: medium;
+  font-weight: 500;
+  padding: 4px 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+  
+}
+.city-search-dropdown-item:hover{
+  cursor: pointer;
+}
+.buttons{
+  margin-left: 30px;
+  gap: 20px;
+}
+.btn{
+  width: 90px;
+  font-size: small;
+  padding: 3px 3px;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  color: var(--color-text-gray);
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+/* Styling for Body part */
+.column{
+  width: 30vw;
+  height: 350px;
+  margin-top: 100px;
+  
+  border-radius: 10px;
+  
+}
+.mainbox{ 
+  width: 100vw;
+ 
+}
+.weatherbox{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: auto;
+  width: 70vw;
+  
+}
+.first-column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.box1{
+  height:48%;
+  
+  background-color: white;
+  border-radius: 10px;
+}
+.box2{
+  height: 48%;
+ 
+  background-color: white;
+  border-radius: 10px;
+}
+.box3{
+  
+  
+  background-color: white;
+}
+
