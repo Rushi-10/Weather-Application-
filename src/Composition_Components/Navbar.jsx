@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="flex-horizontal align-center navbar">
       <Header/>
       <CurrentCity/>
-      <SearchBar/>
+       <SearchBar/>
       
     </div>
   )

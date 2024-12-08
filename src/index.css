@@ -40,8 +40,14 @@ align-items: center;
 .justify-center{
   justify-content: center;
 }
+.space-evenly{
+  justify-content: space-evenly;
+}
 .space-btwn{
   justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
 }
 .relative{
   position: relative;
@@ -72,7 +78,30 @@ align-items: center;
   margin-inline: 5px;
 }
 .mh9{
-  margin-inline: 5px;
+  margin-inline: 9px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.mt40{
+  margin-top: 40px;
+}
+.borderline{
+  border: 1px solid rgb(179, 178, 178);
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+.borderlinefull{
+  border: 1px solid rgb(179, 178, 178);
+  width: 100%;
+ 
 }
 
 /* Styles for SearchBar */
@@ -117,7 +146,7 @@ justify-content: space-between;
   margin-top: 1rem;
   background-color: white;
  border-radius: 10px;
- visibility: hidden;
+ 
 }
 .favorite-city-dropdown-item{
   font-size: medium;
@@ -141,10 +170,11 @@ li{
 }
 .city-search-dropdown{
   width: 100%;
-  margin-top: 9rem;
+  margin-top: 1rem;
   background-color: white;
  border-radius: 10px;
- visibility: hidden;
+ top: 100%;
+ /* visibility: hidden; */
 }
 .city-search-dropdown-item{
   font-size: medium;
@@ -152,8 +182,16 @@ li{
   padding: 4px 2px;
   margin-left: 10px;
   margin-right: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
   
+}
+.current-location-row{
+  font-size: medium;
+  font-weight: 500;
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid red;
 }
 .city-search-dropdown-item:hover{
   cursor: pointer;
@@ -213,9 +251,35 @@ li{
   background-color: white;
   border-radius: 10px;
 }
-.box3{
-  
-  
+.box3{ 
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
+.city-name-fb{
+  margin-inline-start: 10%;
+  }
+.today-fb{
+  margin-inline-end: 10%;
+}
+.box2-row{
+  padding: 9px 0 3px;
+}
+.description{
+  margin-top: 3px;
+  margin-left: 70px;
+}
+/* Box 3 */
 
+.box3-rows-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take the remaining space */
+}
+.box3-heading{
+  height: 30px;
+}
+.box3-row{
+  border-bottom: 1px solid rgb(177, 173, 173);
+ height: 20%;
+}
